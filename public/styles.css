@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+}
+
+body {
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  min-height: 100%;
+  font: 16px / 1 sans-serif;
+}
+
+.top-right {
+  width: 0;
+  height: 0;
+  border-left: 94.5vw solid transparent;
+  border-right: 5.6vw solid transparent;
+  border-top: 50vw solid #214C4F;
+}
+
+.bottom-right {
+  position: absolute;
+  top: 2vh;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 48vh solid transparent;
+  border-bottom: 49vh solid transparent;
+  border-right: 48.5vw solid #EF4539;
+}
+
+.bottom {
+  width: 0;
+  height: 0;
+  border-left: 91.5vh solid transparent;
+  border-right: 91.5vh solid transparent;
+  border-bottom: 50vh solid #D6D330;
+}
+
+.name {
+  position: absolute;
+  top: 50vh;
+  left: 50px;
+}
+
+h2 {
+  font-family: "Poiret One";
+  letter-spacing: 2px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Bad Script";
+  letter-spacing: 2px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.links {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 49.5vw;
+  bottom: -10px;
+  width: 250px;
+  transform: rotate(29deg);
+}
+
+.link-container a {
+  color: #214C4F;
+  margin-right: 20px;
+  text-decoration: none;
+  width: 100px;
+}
