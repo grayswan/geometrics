@@ -1,7 +1,6 @@
-/* berry tones */
-/* #AE1D43
-#E62136
-#550528 */
+/* berry #C4094E
+orange #FF4444 */
+/* green #103A3D */
 
 html {
   height: 100%;
@@ -14,6 +13,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "futura";
+  background-color: #E5E5E5;
 }
 
 .top {
@@ -21,7 +21,7 @@ body {
   height: 0;
   border-left: 50vw solid transparent;
   border-right: 50vw solid transparent;
-  border-top: 50vh solid #FE8972;
+  border-top: 50vh solid #fff;
 }
 
 .right {
@@ -32,8 +32,8 @@ body {
   width: 0;
   height: 0;
   border-top: 50vh solid transparent;
-  border-bottom: 50vh solid transparent;
-  border-right: 50vw solid #353535;
+  border-bottom: 51vh solid transparent;
+  border-right: 50vw solid #CDCA17;
 }
 
 .bottom {
@@ -41,10 +41,10 @@ body {
   height: 0;
   border-left: 50vw solid transparent;
   border-right: 50vw solid transparent;
-  border-bottom: 50vh solid #FF6B6B;
+  border-bottom: 50vh solid #CDCA17;
 }
 
-.name {
+#name {
   position: absolute;
   top: 40vh;
   left: 50px;
@@ -54,12 +54,12 @@ h2 {
   color: #353535;
   font-family: "Poiret One";
   letter-spacing: 2px;
-  font-size: 2.5em;
+  font-size: 2.1em;
   text-transform: uppercase;
 }
 
 .subtitle {
-  color: #FF6B6B;
+  color: #C4094E;
   font-family: "futura";
   letter-spacing: 2px;
   font-size: 1.25em;
@@ -68,60 +68,81 @@ h2 {
 }
 
 .links {
+  margin-bottom: 50px;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50vw;
-  bottom: 35vh;
-  width: 400px;
-  transform: rotate(28deg);
 }
 
-.link-container a {
-  color: #E06E7C;
-  font-size: 1.25em;
-  font-family: "futura";
-  font-weight: 200;
-  letter-spacing: 1px;
-  margin-right: 25px;
+.link-container-github {
+  width: 0;
+  height: 0;
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+  border-bottom: 10vh solid #353535;
+  text-align: center;
+}
+
+.link-container-github a {
+  font-family: "Poiret One";
+  /* position: absolute;
+  left: 38.75vw;
+  top: 154vh; */
+  color: #fff;
   text-decoration: none;
-  width: 100px;
+}
+
+.link-container-linkedin {
+  width: 0;
+  height: 0;
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+  border-top: 10vh solid #353535;
+}
+.link-container-linkedin a {
+  font-family: "Poiret One";
+  /* position: absolute;
+  left: 47.3vw;
+  top: 151vh; */
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-container-email {
+  width: 0;
+  height: 0;
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+  border-bottom: 10vh solid #353535;
+}
+
+.link-container-email a {
+  font-family: "Poiret One";
+  position: absolute;
+  /* font-weight: 300;
+  left: 58.3vw;
+  top: 157vh; */
+  color: #fff;
+  text-decoration: none;
 }
 
 .hello {
-  margin-top: 500px;
-  position: absolute;
+  margin-top: 100px;
+  text-align: center;
   width: 100%;
-  text-align: center;:
 }
 
 .hello h4 {
   color: #C4094E;
-  font-family: "futura";
-  letter-spacing: 4px;
+  font-family: "Poiret One";
+  letter-spacing: 10px;
   font-size: 3em;
-  font-weight: 200;
-}
-
-.direction {
-  position: absolute;
-  margin-top: 575px;
-  width: 100%;
-  text-align: right;
-}
-
-.direction p {
-  padding-right: 50px;
 }
 
 .bio-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
-  margin-top: 650px;
-  margin-bottom: 50px;
 }
 
 .bio {
