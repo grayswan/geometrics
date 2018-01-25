@@ -35,7 +35,7 @@ $(document).ready(() => {
     translateY: '-35vh',
     translateX: '30vw',
     delay: 500,
-    easing: 'easeOutQuad'
+    easing: 'easeOutCubic'
   });
 
 })
