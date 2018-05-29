@@ -1,6 +1,5 @@
-/* berry #C4094E
-orange #FF4444 */
-/* green #103A3D */
+/* background: linear-gradient(#B27485, #bd7088, #a23456); */
+
 
 html {
   height: 100%;
@@ -12,149 +11,132 @@ body {
   left: 0;
   margin: 0;
   min-height: 100%;
-  font-family: "futura";
-  background-color: #E5E5E5;
+  font-family: "Lato";
+  background-color: #ffffff;
 }
 
-.top {
-  width: 0;
-  height: 0;
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
-  border-top: 50vh solid #fff;
+#cover {
+  background: linear-gradient(#d85357, #ae4879, #c22a4e);
+  width: 10vw;
+  height: 10vh;
+  margin-top: 45vh;
+  margin-left: 45vw;
+  position: fixed;
 }
 
-.right {
-  position: absolute;
+#first-name {
+  color: #383838;
+  position: fixed;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  letter-spacing: 20px;
   top: 0;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-top: 50vh solid transparent;
-  border-bottom: 51vh solid transparent;
-  border-right: 50vw solid #CDCA17;
+  z-index: 1000;
 }
 
-.bottom {
-  width: 0;
-  height: 0;
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
-  border-bottom: 50vh solid #CDCA17;
-}
-
-#name {
-  position: absolute;
-  top: 40vh;
-  left: 50px;
-}
-
-h2 {
-  color: #353535;
-  font-family: "Poiret One";
-  letter-spacing: 2px;
-  font-size: 2.1em;
+#first-name h1 {
+  font-size: 3em;
+  font-family: "Futura";
+  font-weight: 200;
+  margin: 0;
   text-transform: uppercase;
 }
 
-.subtitle {
-  color: #C4094E;
-  font-family: "futura";
+#last-name h1 {
+  font-size: 3em;
+  font-family: "Futura";
+  font-weight: 200;
+  opacity: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#last-name {
+  position: fixed;
+  top: 60vh;
+  color: #383838;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  letter-spacing: 20px;
+  z-index: 1000;
+  margin: 0;
+}
+
+.swan {
+  padding-right: 20px;
+  opacity: 0;
+}
+
+.grashel {
+  opacity: 0;
+}
+
+#title h3 {
+  font-size: 2em;
+  font-weight: lighter;
+  z-index: 1000;
+}
+
+#title {
+  color: #383838;
+  display: inline-flex;
+  font-family: "Arial";
+  justify-content: center;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 32vh;
+  z-index: 1000;
+  width: 100%;
+}
+
+.category-container {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 50vh;
+  width: 100%;
+  z-index: 1000;
+}
+
+.category-bubble {
+  border-right: 1px solid #383838;
+}
+
+.category-title {
+  color: #383838;
+  font-size: 2em;
   letter-spacing: 2px;
-  font-size: 1.25em;
-  font-weight: 300;
-  text-align: center;
+  padding-right: 75px;
+}
+
+.skills {
+  padding-left: 100px;
+}
+
+.about {
+  border-right: none;
+  padding-right: 100px;
 }
 
 .links {
-  margin-bottom: 50px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   display: inline-flex;
   justify-content: center;
+  padding: 10px 10px 20px 10px;
 }
 
-.link-container-github {
-  width: 0;
-  height: 0;
-  border-left: 5vw solid transparent;
-  border-right: 5vw solid transparent;
-  border-bottom: 10vh solid #353535;
-  text-align: center;
+.link-container {
+  padding-right: 15px;
 }
 
-.link-container-github a {
-  font-family: "Poiret One";
-  /* position: absolute;
-  left: 38.75vw;
-  top: 154vh; */
-  color: #fff;
-  text-decoration: none;
-}
-
-.link-container-linkedin {
-  width: 0;
-  height: 0;
-  border-left: 5vw solid transparent;
-  border-right: 5vw solid transparent;
-  border-top: 10vh solid #353535;
-}
-.link-container-linkedin a {
-  font-family: "Poiret One";
-  color: #fff;
-  text-decoration: none;
-}
-
-.link-container-email {
-  width: 0;
-  height: 0;
-  border-left: 5vw solid transparent;
-  border-right: 5vw solid transparent;
-  border-bottom: 10vh solid #353535;
-}
-
-.link-container-email a {
-  font-family: "Poiret One";
-  position: absolute;
-  /* font-weight: 300;
-  left: 58.3vw;
-  top: 157vh; */
-  color: #fff;
-  text-decoration: none;
-}
-
-.hello {
-  margin-top: 100px;
-  text-align: center;
-  width: 100%;
-}
-
-.hello h4 {
-  color: #C4094E;
-  font-family: "Poiret One";
-  letter-spacing: 10px;
-  font-size: 3em;
-}
-
-.bio-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.bio {
-  width: 75%;
-}
-
-.footer {
-  color: #fff;
-}
-
-.show {
-  color: #C4094E;
-  position: fixed;
-  padding-top: 50px;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+.links a {
+  color: #383838;
+  font-size: 2.5em;
+  margin-right: 20px;
 }

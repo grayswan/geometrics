@@ -11,6 +11,8 @@
     <title>Color Wheel</title>
     <link rel="stylesheet" href="/styles.css" >
     <link href='https://fonts.googleapis.com/css?family=Bad+Script|Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bellefair|Josefin+Slab|Kavivanar|Lato|Lobster|Lora|Monoton|Raleway" rel="stylesheet">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="anime.js" charset="utf-8"></script>
@@ -18,39 +20,71 @@
     <script src="https://use.fontawesome.com/0874b5a017.js"></script>
   </head>
   <body>
-    <div id="top">
-      <div class="top el"></div>
+    <div id="cover"></div>
+    <div id="first-name">
+      <div class="line">
+        <h1 class="k el">K</h1>
+      </div>
+      <div class="line">
+        <h1 class="r el">r</h1>
+      </div>
+      <div class="line">
+        <h1 class="i el">i</h1>
+      </div>
+      <div class="line">
+        <h1 class="s el">s</h1>
+      </div>
+      <div class="line">
+        <h1 class="t el">t</h1>
+      </div>
+      <div class="line">
+        <h1 class="e el">e</h1>
+      </div>
+      <div class="line">
+        <h1 class="n el">n</h1>
+      </div>
     </div>
-    <div id="right">
-      <div class="right el"></div>
+    <div id="last-name">
+      <div class="line">
+        <h1 class="swan el">Swan</h1>
+      </div>
+      <div class="line">
+        <h1 class="grashel el">Grashel</h1>
+      </div>
     </div>
-    <div id="bottom">
-      <div class="bottom el"></div>
+    <div id="title">
+      <div class="line">
+        <h3 class="title el">front end developer</h3>
+      </div>
     </div>
-    <div id="name">
-      <h2 class="el">Kristen Swan-Grashel</h2>
-      <h4 class="subtitle el">front-end developer</h4>
-    </div>
-    <div class="hello">
-      <h4>HELLO!</h4>
-    </div>
-    <div class="bio-container">
-      <div class="bio">
-        <p>I'm a front end developer with experience building interfaces for data management software. I have worked extensively with React, CSS/SASS, JavaScript, JSON, AJAX, Leaflet, Google Maps JavaScript API, and GeoJSON. I've done test driven development and used GitHub for version control and code reviews. When I get a chance to slack off on my parental duties, I like to skill up on Frontend Masters and occasionally, experiment with animations.</p>
+    <div class="category-container">
+      <div id="skills" onclick="openCategory()" class="category-bubble">
+        <h4 class="category-title skills">skills</h4>
+      </div>
+      <div id="education" class="category-bubble">
+        <h4 class="category-title">education</h4>
+      </div>
+      <div id="experience" class="category-bubble">
+        <h4 class="category-title">experience</h4>
+      </div>
+      <div id="projects" class="category-bubble">
+        <h4 class="category-title">projects</h4>
+      </div>
+      <div id="about" class="category-bubble">
+        <h4 class="category-title about">about</h4>
       </div>
     </div>
     <div class="links">
-      <div class="link-container-github">
-        <!-- <a href="https://github.com/grayswan"><i class="fa fa-github"></i></a> -->
+      <div class="link-container">
+        <a href="https://github.com/grayswan"><i class="fa fa-github"></i></a>
       </div>
-      <div class="link-container-linkedin">
-        <!-- <a href="https://www.linkedin.com/in/kristen-swan-grashel-88b3aa8/"><i class="fa fa-linkedin"></i></a> -->
+      <div class="link-container">
+        <a href="https://www.linkedin.com/in/kristen-swan-grashel-88b3aa8/"><i class="fa fa-linkedin"></i></a>
       </div>
-      <div class="link-container-email">
-        <!-- <a href="mailto:swan.kristen@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> -->
+      <div class="link-container">
+        <a href="mailto:swan.kristen@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
       </div>
     </div>
-    <!-- <footer class="footer">Made by the Power of Grayswan 2018</footer> -->
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
