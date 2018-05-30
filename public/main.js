@@ -52,19 +52,11 @@ $(document).ready(() => {
     })
     .add({
       targets: '#last-name .swan',
-      translateY: '-35vh',
-      easing: 'easeOutExpo',
-      offset: 1200,
-      duration: 3000,
-      opacity: [0, 1]
-    })
-    .add({
-      targets: '#last-name .grashel',
-      translateY: '-35vh',
-      easing: 'easeOutExpo',
-      offset: 1200,
-      duration: 3000,
-      opacity: [0, 1]
+      offest: 1200,
+      translateY: [10, 10],
+      easing: 'easeInOutQuad',
+      opacity: [0, 1],
+      duration: 2000
     })
 
   var coverTransform = anime({
