@@ -10,7 +10,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "Lato";
-  background-color: #ffffff;
+  background-color: #FAA68A;
 }
 
 #cover {
@@ -30,7 +30,7 @@ body {
   justify-content: center;
   letter-spacing: 20px;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #first-name h1 {
@@ -52,13 +52,13 @@ body {
 
 #last-name {
   position: fixed;
-  top: 25vh;
+  top: 23vh;
   color: #383838;
   display: inline-flex;
   width: 100%;
   justify-content: center;
   letter-spacing: 20px;
-  z-index: 1000;
+  z-index: 100;
   margin: 0;
 }
 
@@ -69,7 +69,7 @@ body {
 #title h3 {
   font-size: 2em;
   font-weight: lighter;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #title {
@@ -79,41 +79,85 @@ body {
   justify-content: center;
   letter-spacing: 10px;
   position: absolute;
-  top: 32vh;
-  z-index: 1000;
+  top: 30vh;
+  z-index: 100;
   width: 100%;
 }
 
 .category-container {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  padding-bottom: 10rem;
   position: fixed;
   top: 50vh;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 
-.category-bubble {
-  border-right: 1px solid #383838;
+.grid__item {
+  border-right: 2px solid #383838;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
 }
 
-.category-title {
+.category__title {
   color: #ffffff;
   font-size: 2em;
   letter-spacing: 2px;
   opacity: .4;
-  padding-right: 75px;
 }
 
-.skills {
-  padding-left: 100px;
+.overlay {
+  pointer-events: none;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
 }
 
-.about {
-  border-right: none;
-  padding-right: 100px;
+.overlay--open {
+	pointer-events: auto;
+}
+
+.overlay__close {
+  font-size: 1.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: #FAA68A;
+  border: none;
+  border-radius: 100%;
+}
+
+.overlay__reveal {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(#FAAA99, #F87255);
+	position: absolute;
+	z-index: 1000;
+	transform: translate3d(100%,0,0);
+}
+
+.overlay__item {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ececec;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  padding: 5rem 5vw;
+  justify-content: center;
 }
 
 .links {

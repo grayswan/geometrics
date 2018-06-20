@@ -16,8 +16,10 @@
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="anime.js" charset="utf-8"></script>
+    <script src="tweenMax.min.js"></script>
     <script src="main.js" charset="utf-8"></script>
     <script src="https://use.fontawesome.com/0874b5a017.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>  
   </head>
   <body>
     <div id="cover"></div>
@@ -54,22 +56,41 @@
         <h3 class="title el">front end developer</h3>
       </div>
     </div>
-    <div class="category-container">
-      <div id="skills" onclick="openCategory()" class="category-bubble">
-        <h4 class="category-title skills">skills</h4>
+    <div class="category-container grid">
+      <a id="education" class="grid__item" href="#category-1">
+        <h4 class="category__title">education</h4>
+      </a>
+      <a id="experience" class="grid__item" href="#category-2">
+        <h4 class="category__title">experience</h4>
+      </a>
+      <a id="skills" class="grid__item" href="#category-3">
+        <h4 class="category__title skills">skills</h4>
+      </a>
+      <a id="projects" class="grid__item" href="#category-4">
+        <h4 class="category__title">projects</h4>
+      </a>
+      <a id="about" class="grid__item" href="#category-5">
+        <h4 class="category__title about">about</h4>
+      </a>
+    </div>
+    <div class="overlay">
+      <div class="overlay__reveal"></div>
+      <div class="overlay__item" id="category-1">
+        <h4 class="overlay__content">Education</h4>
       </div>
-      <div id="education" class="category-bubble">
-        <h4 class="category-title">education</h4>
+      <div class="overlay__item" id="category-2">
+        <h4 class="overlay__content">Experience</h4>
       </div>
-      <div id="experience" class="category-bubble">
-        <h4 class="category-title">experience</h4>
+      <div class="overlay__item" id="category-3">
+        <h4 class="overlay__content">Skills</h4>
       </div>
-      <div id="projects" class="category-bubble">
-        <h4 class="category-title">projects</h4>
+      <div class="overlay__item" id="category-4">
+        <h4 class="overlay__content">Projects</h4>
       </div>
-      <div id="about" class="category-bubble">
-        <h4 class="category-title about">about</h4>
-      </div>
+      <div class="overlay__item" id="category-5">
+        <h4 class="overlay__content">About</h4>
+      </div> 
+      <button class="overlay__close">x</button>             
     </div>
     <div class="links">
       <div class="link-container">
@@ -80,6 +101,9 @@
       </div>
       <div class="link-container">
         <a href="mailto:swan.kristen@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </div>
+      <div class="link-container">
+        <a href="https://twitter.com/kristen_grashel"><i class="fa fa-twitter"></i></a>
       </div>
     </div>
     <script src="/main.js" charset="utf-8"></script>
