@@ -10,11 +10,11 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "Lato";
-  background-color: #FAA68A;
+  background-color: #ffffff;
 }
 
 #cover {
-  background: linear-gradient(45deg, #DA4453, #FF6B6B);
+  background-color: #076e4e;
   width: 10vw;
   height: 10vh;
   margin-top: 45vh;
@@ -86,7 +86,7 @@ body {
 
 .category-container {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(3, 33.33%);
   padding-bottom: 10rem;
   position: fixed;
   top: 50vh;
@@ -94,7 +94,7 @@ body {
   z-index: 100;
 }
 
-.grid__item {
+.category__item {
   border-right: 2px solid #383838;
   display: flex;
   text-decoration: none;
@@ -125,13 +125,22 @@ body {
 }
 
 .overlay__close {
-  font-size: 1.5em;
   position: absolute;
-  top: 1em;
-  right: 1em;
-  background-color: #FAA68A;
-  border: none;
+  cursor: pointer;
+	top: 1.5em;
+  right: 2em;
+  border: 0;
+  background: none;
   border-radius: 100%;
+  font-size: 1.8em;
+  color: #383838;
+	margin: 1rem;
+	padding: .5rem 1.25rem .75rem 1.25rem;
+	opacity: 0;
+}
+
+.overlay__close:focus {
+	outline: none;
 }
 
 .overlay__reveal {
@@ -139,8 +148,8 @@ body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: linear-gradient(#FAAA99, #F87255);
-	position: absolute;
+  background-color: #E5E239;
+  position: absolute;
 	z-index: 1000;
 	transform: translate3d(100%,0,0);
 }
@@ -156,8 +165,22 @@ body {
 	display: flex;
 	flex-direction: column;
   align-items: center;
-  padding: 5rem 5vw;
   justify-content: center;
+}
+
+.overlay__content {
+  border: 4px solid #076e4e;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+
+.overlay__title {
+  border-bottom: 1px dashed #076e4e;
+  color: #383838;
+  font-size: 2.25em;
+  opacity: .5;
+  padding-bottom: 1em;
 }
 
 .links {
