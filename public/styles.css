@@ -11,7 +11,7 @@ body {
 }
 
 #cover {
-  background-color: #1E1C26;
+  background-color: #f4f4f4;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -155,7 +155,7 @@ body {
 	height: 100%;
 	top: 0;
   left: 0;
-  background: linear-gradient(#E23923, #CD2F7B);
+  background-color: #CD2F7B;
   position: absolute;
 	z-index: 1000;
 	transform: translate3d(100%,0,0);

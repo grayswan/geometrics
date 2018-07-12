@@ -3,10 +3,10 @@ $(document).ready(() => {
   //Kristen//
   TweenMax.to(".k", 1, {color: "#E23923", ease:Power2.easeInOut}).delay(2)
   TweenMax.to(".r", 1, {color: "#E5E239", ease:Power2.easeInOut}).delay(2.5)
-  TweenMax.to(".i", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(3)
+  TweenMax.to(".i", 1, {color: "#E86C9A", ease:Power2.easeInOut}).delay(3)
   TweenMax.to(".s", 1, {color: "#A9DFAC", ease:Power2.easeInOut}).delay(3.5)
   TweenMax.to(".t", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(4)
-  TweenMax.to(".e", 1, {color: "#99CCCC", ease:Power2.easeInOut}).delay(4.5)
+  TweenMax.to(".e", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(4.5)
   TweenMax.to(".n", 1, {color: "#F99372", ease:Power2.easeInOut}).delay(5)
 
   //Swan Grashel//
@@ -15,7 +15,7 @@ $(document).ready(() => {
   TweenMax.to(".r", 1, {color: "#E5E239", ease:Power2.easeInOut}).delay(3)
   TweenMax.to(".a", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(3.5)
   TweenMax.to(".h", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(4)
-  TweenMax.to(".e", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(4.5)
+  TweenMax.to(".e", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(4.5)
   TweenMax.to(".l", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(5)
 
 
@@ -31,7 +31,7 @@ $(document).ready(() => {
   TweenMax.to(".last.n", 1, {x:"320px", ease:Power2.easeInOut}).delay(8)
 
   //title//
-  TweenMax.to(".title", 1, {color: "#A9DFAC", ease:Power2.easeInOut}).delay(6.5)
+  TweenMax.to(".title", 1, {color: "#CD2F7B", ease:Power2.easeInOut}).delay(6.5)
 
   //border//
   TweenMax.to(".border", 3, {backgroundColor: "#E23923", ease:Power2.easeInOut}).delay(7.5)
