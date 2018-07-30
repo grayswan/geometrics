@@ -1,44 +1,10 @@
 $(document).ready(() => {
   
   //Kristen//
-  TweenMax.to(".k", 1, {color: "#E23923", ease:Power2.easeInOut}).delay(2)
-  TweenMax.to(".r", 1, {color: "#E5E239", ease:Power2.easeInOut}).delay(2.5)
-  TweenMax.to(".i", 1, {color: "#E86C9A", ease:Power2.easeInOut}).delay(3)
-  TweenMax.to(".s", 1, {color: "#A9DFAC", ease:Power2.easeInOut}).delay(3.5)
-  TweenMax.to(".t", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(4)
-  TweenMax.to(".e", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(4.5)
-  TweenMax.to(".n", 1, {color: "#F99372", ease:Power2.easeInOut}).delay(5)
-
-  //Swan Grashel//
-  TweenMax.to(".w", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(2)
-  TweenMax.to(".g", 1, {color: "#E23923", ease:Power2.easeInOut}).delay(2.5)
-  TweenMax.to(".r", 1, {color: "#E5E239", ease:Power2.easeInOut}).delay(3)
-  TweenMax.to(".a", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(3.5)
-  TweenMax.to(".h", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(4)
-  TweenMax.to(".e", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(4.5)
-  TweenMax.to(".l", 1, {color: "#C4094E", ease:Power2.easeInOut}).delay(5)
-
-
-  TweenMax.to(".disappear", 1, {opacity: 0, ease:Power2.easeInOut}).delay(8)
+  const nameTimeline = new TimelineMax({repeat: -1, repeatDelay:5}).restart(2)
+    nameTimeline.add(TweenLite.to(".name", .5, {opacity: 0, ease:Elastic.easeOut}).delay(.5))
+    nameTimeline.add(TweenLite.to(".name", 1, {opacity: 1, ease:Elastic.easeIn}).delay(.5))
   
-  TweenMax.to(".g", 1, {x:"-220px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".last.r", 1, {x:"-220px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".transition-left.a", 1, {x:"-220px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".y", 1, {opacity: 1, color: "#F37057", x:"8px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".last.s", 1, {x:"320px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".last.w", 1, {x:"320px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".transition-right.a", 1, {x:"320px", ease:Power2.easeInOut}).delay(8)
-  TweenMax.to(".last.n", 1, {x:"320px", ease:Power2.easeInOut}).delay(8)
-
-  //title//
-  TweenMax.to(".title", 1, {color: "#CD2F7B", ease:Power2.easeInOut}).delay(6.5)
-
-  //border//
-  TweenMax.to(".border", 3, {backgroundColor: "#E23923", ease:Power2.easeInOut}).delay(7.5)
-  
-  //category title//
-  TweenMax.to(".category__title", 1, {color: "#178F5F", ease:Power2.easeInOut}).delay(6.5)
-
   //page transition//
   {
     class Item {

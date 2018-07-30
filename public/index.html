@@ -8,11 +8,10 @@
   <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Color Wheel</title>
+    <meta name="description" conent="Kristen Swan Grashel is a front end engineer">
+    <title>Kristen Swan Grashel</title>
     <link rel="stylesheet" href="/styles.css" >
-    <link href='https://fonts.googleapis.com/css?family=Bad+Script|Poiret+One' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bellefair|Josefin+Slab|Kavivanar|Lato|Lobster|Lora|Monoton|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Karla|Lato" rel="stylesheet">    
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="anime.js" charset="utf-8"></script>
@@ -22,69 +21,80 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>  
   </head>
   <body>
-    <div id="cover"></div>
-    <div id="first-name">
-      <h1 class="k el">K</h1>
-      <h1 class="r el">r</h1>
-      <h1 class="i el">i</h1>
-      <h1 class="s el">s</h1>
-      <h1 class="t el">t</h1>
-      <h1 class="e el">e</h1>
-      <h1 class="n el">n</h1>
+    <nav class="nav-bar">
+      <div class="category-container grid">
+        <a id="education" class="category__item grid__item" href="#category-1">
+          <h4 class="category__title">resume</h4>
+        </a>
+        <a id="skills" class="category__item grid__item" href="#category-2">
+          <h4 class="category__title skills">skills</h4>
+        </a>
+        <a id="experience" class="category__item grid__item" href="#category-3">
+          <h4 class="category__title">contact</h4>
+        </a>
+      </div>
+      <div class="overlay">
+        <div class="overlay__reveal"></div>
+        <div class="overlay__item" id="category-1">
+          <div class="overlay__content">
+            <div class="overlay__section">
+              <div class="overlay__section-heading">
+                  <h2>PROFILE</h2>
+                </div>
+                <div class="overlay__section-content">
+                  <p>
+                    I'm a front end developer currently living in St. Petersburg, FL. My development career started in 2015 when I attended the Iron Yard code school after spending several years in social services. 
+                    Most of my work so far has been focused on JavaScript and React. I love writing clean, readable code and am always looking for ways to improve.
+                  </p>
+                </div>
+              </div>
+          </div>
+          <div class="overlay__section">
+            <div class="overlay__section-heading">
+              <h2>EDUCATION</h2>
+            </div>
+            <div class="overlay__section-content">
+              <p>
+                University of Florida BA, Sociology
+                Iron Yard, Front End Engineering
+              </p>
+            </div>
+          </div>
+          <div class="overlay__section">
+            <div class="overlay__section-heading">
+              <h2>EXPERIENCE</h2>
+            </div>
+            <div class="overlay__section-content">
+              <h4>3/2016 - present</h4>
+              <h4>Spatial Networks, St. Petersburg, FL</h4>
+              <p>
+
+              </p>
+            </div>
+          </div>  
+        </div>
+        <div class="overlay__item" id="category-2">
+          <div class="overlay__content">
+              <p class="overlay__text">javascript, react, css, css animations, graphql, leaflet, google maps js api, ruby on rails, git, functional js </p>
+            </div>
+          </div>
+        <div class="overlay__item" id="category-3">
+          <div class="overlay__content">
+              <p></p>
+            </div>
+          </div>
+        <button class="overlay__close">x</button>             
+      </div>      
+    </nav>
+    <div class="name-container">
+      <div class="logo-container">
+        <img src="/kristen-green.png" class="name" alt="Kristen">
+      </div>
+      <div class="title-container">
+        <img src="/title-orange.png" class="title" alt="front end developer">
       </div>
     </div>
-    <div id="last-name">
-      <h1 class="s last el">S</h1>
-      <h1 class="w last el">W</h1>
-      <h1 class="transition-right a last el">A</h1>
-      <h1 class="n last el">N</h1>
-      <h1 class="y last el">Y</h1>
-      <h1 class="g last el">G</h1>
-      <h1 class="r last el">R</h1>
-      <h1 class="transition-left a last el">A</h1>
-      <h1 class="s disappear last el">S</h1>
-      <h1 class="h disappear last el">H</h1>
-      <h1 class="e disappear last el">E</h1>
-      <h1 class="l disappear last el">L</h1>
-    </div>
-    <div id="title">
-      <h3 class="title">front end developer</h3>
-    </div>
-    <div class="category-container grid">
-      <a id="education" class="category__item grid__item" href="#category-1">
-        <h4 class="category__title">about</h4>
-        <div class="border"></div>    
-      </a>
-      <a id="skills" class="category__item grid__item" href="#category-2">
-        <h4 class="category__title skills">skills</h4>
-        <div class="border"></div>    
-      </a>
-      <a id="experience" class="category__item grid__item" href="#category-3">
-        <h4 class="category__title">experience</h4>
-      </a>
-    </div>
-    <div class="overlay">
-      <div class="overlay__reveal"></div>
-      <div class="overlay__item" id="category-1">
-        <div class="overlay__content">
-          <h4 class="overlay__title">About</h4>
-        </div>
-      </div>
-      <div class="overlay__item" id="category-2">
-        <div class="overlay__content">
-            <h4 class="overlay__title">Skills</h4>
-            <p class="overlay__text">javascript, react, css, css animations, graphql, leaflet, google maps js api, ruby on rails, git, functional js </p>
-          </div>
-        </div>
-      <div class="overlay__item" id="category-3">
-        <div class="overlay__content">
-            <h4 class="overlay__title">Experience</h4>
-            <p></p>
-          </div>
-        </div>
-      <button class="overlay__close">x</button>             
-    </div>
-    <div class="links">
+    <div class="footer">
       <div class="link-container">
         <a href="https://github.com/grayswan"><i class="fa fa-github"></i></a>
       </div>
